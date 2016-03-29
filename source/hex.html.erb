@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-9 hex-header">
+      <h2>Display every hexadecimal code in html</h2>
+    </div>
+    <div class="clearfix"></div>
+      <p>
+        This is just a sample of all the possible colors because if i displayed all of them it would crash the page.<br />
+        This was a small test project that i wanted to see if anyone had done it before. Nobody had that i could see so i went at it.<br />
+        I came up with a few terrible solutions and eventually i ased this <a href="http://stackoverflow.com/questions/36253884/how-to-get-every-valid-hex-code-in-javascript">question</a> on stack overflow. Here is a breakdown of the result.
+      </p>
+      <div class="col-sm-9">
+        Code Block:
+      </div>
+      <div class="col-sm-3">
+        Result:
+      </div>
+      <div class="code-block col-sm-9">
+        <div>
+          <xmp>
+            app.directive 'randomColor', () ->
+              link: (scope) ->
+                $cv = $('#colorvomit')
+                col = parseInt('111', 16)
+                while col <= parseInt('fff', 16)
+                  hex = col.toString(16)
+                  $cv.append '<span style="background-color:#' + hex + ';"> &nbsp; </span>'
+                  col++
+          </xmp>
+        </div>
+      </div>
+      <div class="color-result col-sm-3">
+        <div random-color>
+          <span class="randcol"></span>
+          <div id=colorvomit></div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-3 col-xs-12">
+        <button type="button" name="back button" onclick="goBack()" style="border-radius: 2px;" class="btn btn-primary btn-block">Go Back</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function goBack() {
+      window.history.back();
+  }
+</script>
