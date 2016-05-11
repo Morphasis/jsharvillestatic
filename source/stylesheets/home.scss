@@ -71,4 +71,16 @@ html{
 }
 .hex-header{
   margin-bottom: 50px;
+  text-align: center;
+}
+.btn-primary{
+  background-color: white;
+  border-radius: 2px;
+  color: black;
+  margin: 5px;
+  &:hover{
+    background-color: white;
+    border-width: 2px;
+    color: black;
+  }
 }

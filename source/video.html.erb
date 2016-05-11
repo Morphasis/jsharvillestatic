@@ -1,24 +1,67 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-3">
-
-    </div>
-    <div class="col-sm-9 hex-header">
-      <h2>This page is under construction</h2>
+    <div class="col-sm-12 hex-header">
+      <h2>Arduino project</h2>
     </div>
     <div class="clearfix"></div>
-    <video width="320" height="240" controls>
-      <source src="images/ar1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-    <video width="320" height="240" controls>
-      <source src="images/ar2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
+    <div class="col-sm-6">
+      <video width="100%" controls>
+        <source src="images/ar1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="col-sm-6">
+      <img class="img-responsive" src="http://www.intorobotics.com/wp-content/uploads/2013/06/dsku-fidhsfudhsfdsfidhsi00001.jpg" alt="ard image" />
+    </div>
+    <br />
+    <div>
+      <div class="col-sm-9">
+        <p> This is the description of the content
+        <p> This is the description of the content
+        <p> This is the description of the content
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <video width="100%" controls>
+        <source src="images/ar1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="col-sm-6">
+      <!-- <img class="img-responsive" src="http://www.intorobotics.com/wp-content/uploads/2013/06/dsku-fidhsfudhsfdsfidhsi00001.jpg" alt="ard image" /> -->
+    </div>
+    <br />
+    <div>
+      <div class="col-sm-9">
+        <p> This is the description of the content
+        <p> This is the description of the content
+        <p> This is the description of the content
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h3>
+          Step by step breakdown: <br />
+        </h3>
+        <p>
+          <a href="www.google.com">There official website</a>
+          <span style="border: 1px solid lightgrey;">$cv = $('#colorvomit')</span> is a jquery kind of bind between the content with the id of colorvomit and the name $cv. <br />
+          <span style="border: 1px solid lightgrey;">col = parseInt('111', 16)</span> So the only "complex" thing here is the parseInt just parses a string and returns an integer. <br />
+          In this case it's the number 111 with the radix that sets it to 16 which is a hexadecimal. (refer to other cases of this in while loop) <br />
+          The while look is just a when this hex is smaller or equal to this other number run this... <br />
+          Then the <span style="border: 1px solid lightgrey;">hex = col.toString(16)</span> makes sure the number is formatted into a string before it's added to the span tag below.
+        </p>
+        <p>
+          The <span style="border: 1px solid lightgrey;">$cv.append</span> means add this content after the <span style="border: 1px solid lightgrey;">$cv</span> so in this case that's the div with the id color vomit <br />
+          Notice in the style tag there is a <span style="border: 1px solid lightgrey;">+ hex +</span> which binds the variable into the tag there even though it's in quotes. <br />
+          <span style="border: 1px solid lightgrey;">col++</span> then increases the number and runs the while loop again until the max number specified is reached.
+        </p>
+      </div>
+    </div>
     <div class="row">
       <hr />
-      <div class="col-sm-3 col-xs-12">
-        <button type="button" name="back button" onclick="goBack()" style="border-radius: 2px;" class="btn btn-primary btn-block">Go Back</button>
+      <div class="col-sm-2 col-xs-12">
+        <button type="button" name="back button" onclick="goBack()" class="btn btn-primary btn-block">Go Back</button>
       </div>
     </div>
   </div>
